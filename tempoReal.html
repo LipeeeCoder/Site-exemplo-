@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ver Carros | AUTOCARS IMPORTS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="tempoReal.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">AUTOCARS IMPORTS</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="publicacoes.html">Publicações</a>
+            <a href="contato.html">Contato</a>
+            <a href="tempoReal.html">Ver Carros</a>
+        </nav>
+    </header>
+
+    <!-- Seção de Carros em Tempo Real -->
+    <section class="carros-disponiveis">
+        <h1>Carros Disponíveis</h1>
+
+        <!-- Filtro de Busca -->
+        <div class="filtros">
+            <label for="marca">Marca:</label>
+            <select id="marca" name="marca">
+                <option value="todas">Todas</option>
+                <option value="bmw">BMW</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="nissan">Nissan</option>
+                <option value="porche">Porche</option>
+                <option value="mclaren">McLaren</option>
+                <option value="ferrari">Ferrari</option>
+                <option value="toyota">Toyota</option>
+                <option value="mazda">Mazda</option>
+            </select>
+
+            <label for="preco">Faixa de Preço:</label>
+            <select id="preco" name="preco">
+                <option value="todos">Todos</option>
+                <option value="ate-800k">Até R$800,000</option>
+                <option value="900k-1,500,000k">R$900,000 - R$1,500,000</option>
+            </select>
+
+            <button type="button">Filtrar</button>
+        </div>
+
+        <!-- Lista de Carros -->
+        <div class="lista-carros">
+
+            <div class="carro" data-marca="bmw">
+                <img src="imagens/bmw.png" alt="BMW M4">
+                <h3>BMW M4</h3>
+                <p><strong>Preço:</strong> R$560,000</p>
+                <p><strong>Status:</strong> Disponível</p>
+                <button type="button">Estou Interessado</button>
+            </div>
+
+            <div class="carro" data-marca="mercedes">
+                <img src="imagens/Mercedes.png" alt="Mercedes AMG GT">
+                <h3>Mercedes AMG GT</h3>
+                <p><strong>Preço:</strong> R$720,000</p>
+                <p><strong>Status:</strong> Disponível</p>
+                <button type="button">Estou Interessado</button>
+            </div>
+
+            <div class="carro" data-marca="nissan">
+                <img src="imagens/Gtr.png" alt="GTR R35">
+                <h3>Nissan Skyline GTR R35</h3>
+                <p><strong>Preço:</strong> R$800,000</p>
+                <p><strong>Status:</strong> Disponível</p>
+                <button type="button">Estou Interessado</button>
+            </div>
+
+            <div class="carro" data-marca="porche">
+                <img src="imagens/Carrera.png" alt="Porche Carrera GT">
+                <h3>Porche Carrera GT</h3>
+                <p><strong>Preço:</strong> R$1,100,000</p>
+                <p><strong>Status:</strong> Disponível</p>
+                <button type="button">Estou Interessado</button>
+            </div>
+            
+            <div class="carro" data-marca="mclaren">
+                <img src="imagens/P1.png" alt="McLaren P1">
+                <h3>McLaren P1</h3>
+                <p><strong>Preço:</strong> R$1,200,000</p>
+                <p><strong>Status:</strong> Disponível</p>
+                <button type="button">Estou Interessado</button>
+            </div>
+
+            <div class="carro" data-marca="ferrari">
+                <img src="imagens/LaFerrari.png" alt="Ferrari LaFerrari">
+                <h3>Ferrari LaFerrari</h3>
+                <p><strong>Preço:</strong> R$1,300,000</p>
+                <p><strong>Status:</strong> Disponível</p>
+                <button type="button">Estou Interessado</button>
+            </div>
+
+            <div class="carro" data-marca="toyota">
+                <img src="imagens/supra.png" alt="Toyota Supra MK4">
+                <h3>Toyota Supra MK4</h3>
+                <p><strong>Preço:</strong> R$1,700,000</p>
+                <p><strong>Status:</strong> Disponível</p>
+                <button type="button">Estou Interessado</button>
+            </div>
+
+            <div class="carro" data-marca="nissan">
+                <img src="imagens/r34.png" alt="GTR R34">
+                <h3>Nissan Skyline GTR R34</h3>
+                <p><strong>Preço:</strong> R$1,700,000</p>
+                <p><strong>Status:</strong> Disponível</p>
+                <button type="button">Estou Interessado</button>
+            </div>
+
+            <div class="carro" data-marca="mazda">
+                <img src="imagens/rx7.png" alt="Rx7">
+                <h3>Mazda Rx7</h3>
+                <p><strong>Preço:</strong> R$1,700,000</p>
+                <p><strong>Status:</strong> Disponível</p>
+                <button type="button">Estou Interessado</button>
+            </div>
+
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 AUTOCARS IMPORTS. Todos os direitos reservados.</p>
+        <p>Email: contato@autocarsimports.com | Telefone: (13) 1234-5678</p>
+    </footer>
+</body>
+</html>
